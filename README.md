@@ -1,4 +1,3 @@
-# dz6
 Homework #6
 
 Create a user registration form. The form should contain the following elements:
