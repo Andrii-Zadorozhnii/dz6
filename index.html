@@ -8,35 +8,48 @@
 
     <title>Document</title>
 </head>
+<header>
+    <div>
+        <h1 class="h1-header">Registration form</h1>
+    </div>
+</header>
 <body>
-    <section class="main-window">
+    <form class="main-window">
         <div class="full-name">
-            <label class="full-name-text">Full Name</label>
-            <input class="full-name-input" type="text">
+            <label for="full-name-text" class="full-name-text">Full Name</label>
+            <input class="full-name-input" type="text" name="full-name-text" id="full-name-text" placeholder=" Write your full name" required>
         </div>
         <div class="email">
-            <label class="email-text">E-mail</label>
-            <input class="email-input" type="text">
+            <label for="email-text" class="email-text">E-mail</label>
+            <input class="email-input" type="text" name="email-text" id="email-text" placeholder=" Write your e-mail adress" required>
         </div>
         <div class="password">
-            <label class="password-text">Password</label>
-            <input class="password-input" type="text">
+            <label for="password-text" class="password-text">Password</label>
+            <input class="password-input" type="password" name="password-text" id="password-text" placeholder=" Write your password" required>
         </div>
         <div class="password">
-            <label class="password-text">Repeate Password</label>
-            <input class="password-input" type="password">
+            <label for="password-text-repeat" class="password-text">Repeate Password</label>
+            <input class="password-input" type="password" name="password-text-repeat" id="password-text-repeat" placeholder=" Write your password" required>
         </div>
         <div class="sex">
-            <label class="male-radio-text">Male</label>
-            <label class="femail-radio-text">Femail</label>
+            <label for="sex">Sex:</label>
+            <div class="choose-sex-male">
+                <input type="radio" id="sex-radio-choose-male" name="sex-radio-choose" value="<Male>" required>
+                <label for="sex-radio-choose" class="male-radio-text">Male</label>    
+            </div>
+            <div class="choose-sex-female">
+                <input type="radio" id="sex-radio-choose-female" name="sex-radio-choose" value="Female" required>
+                <label class="female-radio-text" for="sex-radio-choose">Female</label>    
+            </div>
         </div>
         <div class="age">
-            <label class="age-text">Age</label>
-            <input class="age-input" type="number">
+            <label for="age-text" class="age-text">Age</label>
+            <input class="age-input" type="number" id="age-text" name="age-text" placeholder=" Write/Select your age" required>
         </div>
         <div class="classroom">
-            <label class="classroom-text">Classroom</label>
-            <select class="classroom-select" name="classroom-select" id="classroom-select">
+            <label for="classroom-select" class="classroom-text">Classroom</label>
+            <select class="classroom-select" name="classroom-select" id="classroom-select" required>
+                <option value="default">**Select Classroom**</option>
                 <option value="front-end">Front-End</option>
                 <option value="back-end">Back-End</option>
                 <option value="project-management">Project Management</option>
@@ -44,11 +57,11 @@
             </select>
         </div>
         <div class="full-adress">
-            <label class="full-adress-text">Full adress</label>
-            <textarea class="full-adress-select" name="full-adress" id="full-adress" cols="30" rows="10"></textarea>
+            <label for="full-adress" class="full-adress-text">Full adress</label>
+            <textarea class="full-adress-select" name="full-adress" id="full-adress" cols="30" rows="10" placeholder="Write your home adress(country,city,street..." required></textarea>
         </div>
-        <div class="licence-comfirmation">
-            <input type="checkbox"><label class="licence-comfirmation-text"> Consent for processing the personal data</label>
+        <div class="licence-comfirmation-div">
+            <input class="licence-comfirmation" type="checkbox" required> <p>Consent for processing the personal data</p> 
         </div>
         <div class="buttons-area">
             <button class="clear-form">Clear</button>
@@ -68,6 +81,6 @@
 
 
 
-    </section>
+    </form>
 </body>
 </html>
