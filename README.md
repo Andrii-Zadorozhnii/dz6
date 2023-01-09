@@ -18,5 +18,3 @@ Please note that the form must be working, all fields are required to be filled 
 Extra:
 
 Create an html page that contains a form divided into logical blocks. The form must have all possible elements of different types.
-
-Translated with www.DeepL.com/Translator (free version)
